@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Searching Engine</title>
+    <link rel="Stylesheet" type="text/css" href="core.css" />
+    <link rel="Stylesheet" type="text/css" href="presentation.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="_scripts/functions.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="line header">
+            <div class="header-background">
+                <div class="column last-col">
+                <h3></h3>
+                <p>
+                    <input id="txtQuery" type="text" title="Search Terms" /><button id="btnSearch" type="button" title="GO">GO</button>
+                </p>
+            </div>
+            </div>
+        </div>
+        
+        <div class="line search-content">
+            <div class="column col-threefifths">
+                <h3 id="results-header"></h3>
+                <p id="results-summary"></p>
+                <div id="search-result">
+                    <h3>Results:</h3>
+                    <div id="result-aggregates" class="results"></div>
+                    <ul id="result-list" class="results">
+                    </ul>
+                    <ul id="result-navigation" class="result-navigation">
+                        <li id="prev">&laquo;</li>
+                        <li id="next">&raquo;</li>
+                    </ul>
+                </div>
+                <p id="error-list">
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
